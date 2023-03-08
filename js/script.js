@@ -151,9 +151,24 @@ function clear() {
     btnClear = userText.innerHTML.slice(0, -1) //replace(/.$/, '')
     userText.innerHTML = btnClear
 }
-
 let keys = document.querySelectorAll('.keyboard .key')
 let keyClear = document.querySelectorAll('.keyboard .clear')
+let userText = document.getElementById('userText')
+
+let isCapsLockOn = false;
+document.getElementById('capslock').addEventListener('click', function() {
+    isCapsLockOn = !isCapsLockOn;
+    let keys = document.querySelectorAll('.key');
+    keys.forEach(function(key) {
+        
+        let keyText = key.textContent;
+        if (isCapsLockOn) {
+            key.textContent = keyText.toUpperCase();
+        } else {
+            key.textContent = keyText.toLowerCase();
+        }
+    });
+});
 
 keys.forEach( btn => {
     btn.addEventListener('click', addSymbol)
