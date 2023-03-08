@@ -1,4 +1,4 @@
-h1 {
+/* h1 {
     margin-top: calc(6vw + 29px);
 
     font-size: calc(3vw + 17.5px);
@@ -23,4 +23,51 @@ h3 {
     font-size: calc(0.7vw + 15.5px);
     text-align: center;
     color: #7a3e0c;
+}
+ */
+
+body {
+    background-color: #d1cece;
+}
+
+.areaText {
+    width: 1000px;
+    margin: 20px auto 0;
+}
+
+.areaKeyboard {
+    width: 1000px;
+    margin: 20px auto 0;
+    padding: 5px;
+
+    border: 1px solid slategrey;
+    border-radius: 4px;
+    position: relative;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex:last-child {
+    justify-content: center;
+}
+
+.flex:last-child button {
+    width: 800px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 40px;
+    color: #970707;
+}
+button {
+    margin: 10px;
+    padding: 20px;
+}
+
+textarea {
+    font-size: 24px;
 }
