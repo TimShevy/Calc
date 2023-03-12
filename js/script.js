@@ -151,6 +151,7 @@ function clear() {
     btnClear = userText.innerHTML.slice(0, -1) //replace(/.$/, '')
     userText.innerHTML = btnClear
 }
+
 let keys = document.querySelectorAll('.keyboard .key')
 let keyClear = document.querySelectorAll('.keyboard .clear')
 let userText = document.getElementById('userText')
